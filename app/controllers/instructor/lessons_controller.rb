@@ -1,4 +1,5 @@
 class Instructor::LessonsController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :authenticate_user!
   before_action :require_authorized_for_current_section, only: [:create]
   before_action :require_authorized_for_current_lesson, only: [:update]

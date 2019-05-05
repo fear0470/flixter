@@ -22,3 +22,5 @@
 
 
 //= require jquery-ui
+
+//requiring jquery_ujs
